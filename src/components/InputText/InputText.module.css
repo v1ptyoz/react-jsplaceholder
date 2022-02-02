@@ -1,0 +1,22 @@
+.inputText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 10px;
+}
+
+.input {
+  box-sizing: border-box;
+  max-width: 220px;
+  padding: 5px 10px;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.input:required:invalid {
+  outline: 1px solid red;
+  border-color: transparent;
+}

@@ -1,0 +1,21 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.left {
+  width: 150px;
+  height: 100%;
+  padding: 35px 20px;
+  background: #BDBDBD;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.right {
+  padding: 20px 60px 25px 34px;
+  width: 100%;
+  overflow-y: scroll;
+}

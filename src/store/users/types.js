@@ -1,0 +1,6 @@
+export const types = {
+  SET_LOADING: "SET_LOADING",
+  SET_USERS: "SET_USERS",
+  SORT_BY_CITY: "SORT_BY_CITY",
+  SORT_BY_ORG: "SORT_BY_ORG",
+}

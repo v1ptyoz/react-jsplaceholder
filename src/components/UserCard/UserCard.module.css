@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  padding: 20px 12px;
+  border: 1px solid #F3F3F3;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  margin-top: 15px;
+  align-self: flex-end;
+}

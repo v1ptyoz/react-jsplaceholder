@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./App.module.css"
+import Controls from "./components/Controls";
+import UserList from "./components/UserList";
+import UserCard from "./components/UserCard";
+import { useState } from "react";
 
-function App() {
+
+export default function App() {
+  const [showCard, setShowCard] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className={styles.main}>
+      <aside className={styles.left}>
+        Сортировка
+        <Controls />
+      </aside>
+      <aside className={styles.right}>
+        {showCard && <UserCard id={showCard} closeCard={setShowCard}/>}
+        {!showCard && <UserList openCard={setShowCard}/>}
+      </aside>
+    </main>
   );
 }
-
-export default App;
